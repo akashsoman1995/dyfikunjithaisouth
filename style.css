@@ -611,7 +611,7 @@ ul{
   }
   }
   
-  @media (max-width: 500px){
+ @media (max-width: 500px){
     .slider .slide .info h2{
       font-size: 1.8em;
       line-height: 40px;
@@ -620,4 +620,40 @@ ul{
     .slider .slide .info p{
       font-size: 0.9em;
     }
+    .log h3{
+      display: inline-block;
+      color: #fe0103;
+      text-shadow: 1px 1px 3px #000 ;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style:normal;
+      margin-bottom: 7px;
+      font-weight: inherit;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+    
+    }
+    .log h2{
+      display: inline-block;
+      color: #fe0103;
+      text-shadow: 1px 1px 3px #000 ;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style:normal;
+      margin-bottom: 7px;
+      font-weight: inherit;
+      font-size: 18px;
+  }
+  .logo-imgg{
+    margin-right: 90%;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: ivory;
+    width: 99.5%;
+    
+    height: 80px;
+   
+    border-radius: 8px;
+}
   }
