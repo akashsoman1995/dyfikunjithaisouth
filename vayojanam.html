@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyfi kunjithai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"> </script>
+
+
+</head>
+<body>
+    
+    <div class="header">
+        
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="pic/download.jpg" alt="" width="150px">
+                    
+
+                </div>
+                <div class="log">
+                    <h2>Kunjithai </h2>
+                    <h3>south</h3>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        
+                        
+                        
+                        
+                    </ul> 
+                </nav>
+               <!-------- <img src="pic/menu.png" alt="" id="check" class="toogle-logo" width="30px" height="30px" >-->
+              <a href="gallery.html"><img src="pic/menu.png" alt="" id="check"  width="30px" height="30px" ><p>BACK</p></a> </br>
+              
+            
+               
+            </div>
+
+        </div>
+        
+</div>
+
+
+
+
+<!----------------blood donation------------>
+
+
+
+
+            <!----------------notes under form------------>
+
+
+
+<div class="row">
+    <div class="col-5 col-">
+        <a href=""><img src="https://scontent.fcok12-1.fna.fbcdn.net/v/t1.6435-9/80870325_2550652011821267_7162302091468210176_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=U9xQDfwqvbwAX9MHg7E&_nc_ht=scontent.fcok12-1.fna&oh=6bcf9c86342c0fbd44759b4e0945fd95&oe=60E2A06D" width="" alt=""  ></a>
+
+    </div>
+    <div class="col-">
+        <div class="dia-bl">
+            
+            <div class="para-gallery para-blood"><p>
+                വയോജനങ്ങളുടെ ക്രിസ്തുമസ്,പുതുവത്സരാഘോഷവും. ഒപ്പം ഹോമിയോ മെഡിക്കൽ ക്യാമ്പും.</p>
+                 
+               
+              </div>
+              
+    </div>
+    </div>
+    
+</div>
+<div class="row row-glry">
+    <div class="col-5 ">
+        <img src="https://scontent.fcok12-1.fna.fbcdn.net/v/t1.6435-9/81037490_2550651961821272_5919749232188719104_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=p3kX9GqGO3YAX-kcLYi&_nc_ht=scontent.fcok12-1.fna&oh=97902a620cb444192096b5ff69a1388e&oe=60DFF5CC"  alt="">
+
+    </div>
+    <div class="col-5">
+        <img src="https://scontent.fcok12-1.fna.fbcdn.net/v/t1.6435-9/80979017_2550652068487928_5305708452348166144_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=t90Yj12se_gAX-32hD5&_nc_ht=scontent.fcok12-1.fna&oh=5c2adffaf4ff06f90bfbd3e4f02ab358&oe=60E099E6" alt="">
+        
+    </div>
+    
+</div>
+
+    
+
+
+                                          
+                                          
+                                         
+
+
+                    
+
+
+                  
+                      
+                      
+
+  
+    
+
+  
+ <!---------------------------footter-------------------------------->
+ <div  id="ftr" class="footer">
+    <div class="containerr">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>useful links</h3>
+                <ul>
+                    <li><a href="http://dyfikerala.com/Default.aspx">dyfi kerala</a></li>
+                    <li><strike>blog spot</strike></li>
+                    <li><strike>policy</strike></li>
+                    <li><strike>join</strike></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>follow us</h3>
+                <ul>
+                  <li><a href="https://www.facebook.com/Dyfi-kunjithai-108929974743116">
+                    facebook</a></li>
+                    <li><strike> Twitter</strike></li>
+                    <li><strike>Instagram</strike></li>
+                    <li>email:dyfikunjithaioct9@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - madhavam group of company -designed by aKaSH M SOMAN</p>
+    </div>
+  </div>
+
+
+
+
+
+    <script>
+        let togglelogo= document.querySelector('.toogle-logo')
+        let menu = document.querySelector('.menu')
+    
+        togglelogo.addEventListener('click',function(){
+            menu.classList.toggle('is-active')
+        })
+    </script>
+
+
+<!-----------form submission------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxpIiL9r4BSeKHeom8BV2OExBv4r53O0KDFeE2P/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+    
+      
+
+        
+
+</body>
+</html>
